@@ -1,0 +1,45 @@
+/* ==========================================================================
+   ZYRA STORE - ADAPTABILIDAD RESPONSIVA CINEMÁTICA (PREMIUM)
+   ========================================================================== */
+
+@media (max-width: 900px) {
+    .portal-container {
+        padding: 2.5rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .portal-container {
+        padding: 1.5rem;
+        justify-content: flex-start;
+        gap: 30px;
+        overflow-y: auto;
+    }
+
+    .cinematic-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .portal-center-stage {
+        margin: 40px 0;
+    }
+
+    .logo-inner-el img {
+        max-height: 80px;
+    }
+
+    .cinematic-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        border-top: none;
+        padding-top: 0;
+    }
+
+    .footer-left-col, .footer-right-col {
+        width: 100% !important;
+        justify-content: flex-start !important;
+    }
+}

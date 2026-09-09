@@ -1,0 +1,116 @@
+/* ==========================================================================
+   ZYRA STORE - DISEÑO DE LAYOUT Y CAPAS DEL PORTAL 3D (PREMIUM)
+   ========================================================================== */
+
+/* Overlays Cinemáticos */
+.panel-vignette {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(2, 2, 2, 0.1) 0%, rgba(2, 2, 2, 0.96) 100%);
+    z-index: 3;
+    pointer-events: none;
+}
+
+.scanlines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgba(18, 16, 16, 0) 50%, 
+        rgba(0, 0, 0, 0.08) 50%
+    );
+    background-size: 100% 4px;
+    z-index: 4;
+    pointer-events: none;
+    opacity: 0.25;
+}
+
+.bg-video-el {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Canvas del Túnel Warp 3D */
+#warp-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: var(--bg-pure-black);
+    pointer-events: none;
+}
+
+/* Contenedor General */
+.portal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    padding: 4.5rem;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}
+
+/* Cabecera Superior */
+.cinematic-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 20;
+}
+
+/* Área Central */
+.portal-center-stage {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.portal-logo-wrapper {
+    position: relative;
+    z-index: 15;
+    pointer-events: none;
+}
+
+/* Pie de Página Cinemático */
+.cinematic-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: var(--border-cinematic);
+    padding-top: 25px;
+    z-index: 20;
+}
+
+.footer-left-col {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.footer-right-col {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    width: 50%;
+}

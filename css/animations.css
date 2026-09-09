@@ -1,0 +1,42 @@
+/* ==========================================================================
+   ZYRA STORE - TIMINGS Y REVEALS CINEMÁTICOS DEL PORTAL (PREMIUM)
+   ========================================================================== */
+
+@keyframes scaleUpReveal {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cinematic-header {
+    animation: scaleUpReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.portal-center-stage {
+    animation: scaleUpReveal 1.5s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+}
+
+.cinematic-footer {
+    animation: scaleUpReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
+}
+
+/* Pulsación sutil y flotante del logotipo central */
+@keyframes logoFloatPulse {
+    0% {
+        transform: translateY(0);
+        filter: drop-shadow(0 0 25px rgba(223, 186, 95, 0.35));
+    }
+    100% {
+        transform: translateY(-8px);
+        filter: drop-shadow(0 0 35px rgba(223, 186, 95, 0.55));
+    }
+}
+
+.logo-inner-el {
+    animation: logoFloatPulse 3s infinite alternate ease-in-out;
+}

@@ -1,0 +1,31 @@
+/* ==========================================================================
+   ZYRA STORE - VARIABLES CSS Y COLORES DEL PORTAL WARP (PREMIUM)
+   ========================================================================== */
+
+:root {
+    /* Paleta Cinemática */
+    --bg-pure-black: #020202;
+    --bg-panel-dark: rgba(4, 4, 4, 0.45);
+    
+    /* Bordes Finos */
+    --border-cinematic: 1px solid rgba(255, 255, 255, 0.025);
+    --border-cinematic-active: 1px solid rgba(223, 186, 95, 0.3);
+    
+    /* Color de Acento (Oro Bronce / Gold) */
+    --accent-pure-white: #dfba5f;
+    --accent-glow: rgba(223, 186, 95, 0.22);
+    
+    /* Colores del texto */
+    --text-primary: #fbfbfb;
+    --text-secondary: #a1a1aa;
+    --text-muted: #4e4e52;
+    
+    /* Tipografías Futura Bold Italic Style */
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-size-base: 16px;
+    
+    /* Transiciones */
+    --transition-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    --blur-intensity: 14px;
+}
